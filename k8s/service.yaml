@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: bae
+  name: bae
+  namespace: bae
+spec:
+  type: NodePort
+  ports:
+  - nodePort: 32127
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: bae

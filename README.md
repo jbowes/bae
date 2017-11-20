@@ -45,8 +45,6 @@ docker build -t bae .
 Assumes minikube
 
 ```
-kubectl create ns bae
-kubectl run -n bae --image=bae --image-pull-policy=Never bae
-kubectl expose deployment -n bae --type=NodePort --port 80 bae
+kubectl apply -f k8s
 minikube service -n bae bae
 ```
