@@ -30,3 +30,12 @@ yarn dev
 yarn build
 yarn start
 ```
+
+# Building a docker image for use with kubernetes
+
+Assumes minikube
+
+```
+$(eval minikube docker-env)
+docker build -t bae .
+```
