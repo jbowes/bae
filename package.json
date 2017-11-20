@@ -1,0 +1,23 @@
+{
+  "name": "bae",
+  "version": "0.0.1",
+  "description": "The best app ever(tm) - next.js version!",
+  "main": "index.js",
+  "author": "James Bowes",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "micro": "^9.0.2",
+    "micro-route": "^2.5.0",
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "micro-dev": "^1.1.2"
+  }
+}
