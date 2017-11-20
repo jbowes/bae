@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bae
+  namespace: bae
+data:
+  COOL_ENV_VAR: nice job

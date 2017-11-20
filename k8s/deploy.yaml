@@ -19,6 +19,6 @@ spec:
       - image: bae
         imagePullPolicy: Never
         name: bae
-        env:
-          - name: COOL_ENV_VAR
-            value: "we set an environment variable for config"
+        envFrom:
+          - configMapRef:
+              name: bae
