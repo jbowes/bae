@@ -6,7 +6,7 @@
 next.js edition
 ```
 
-# Best App Ever
+# Best App Ever?
 
 This is the best app ever - next.js edition.
 
