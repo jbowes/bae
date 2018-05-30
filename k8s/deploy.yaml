@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: bae
+  name: bae
+  namespace: bae
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: bae
+  template:
+    metadata:
+      labels:
+        run: bae
+    spec:
+      containers:
+      - image: bae
+        imagePullPolicy: Never
+        name: bae
+        envFrom:
+          - configMapRef:
+              name: bae
