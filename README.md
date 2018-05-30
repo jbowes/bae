@@ -11,7 +11,6 @@ next.js edition
 This is the best app ever - next.js edition.
 
 ## Getting started
-
 make sure you have `node` and `yarn` installed. Install the dependencies:
 
 ```
