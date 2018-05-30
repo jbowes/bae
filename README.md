@@ -30,3 +30,23 @@ yarn dev
 yarn build
 yarn start
 ```
+
+# Building a docker image for use with kubernetes
+
+Assumes minikube
+
+```
+$(eval minikube docker-env)
+docker build -t bae .
+```
+
+# Running bae in kubernetes
+
+Assumes minikube
+
+```
+kubectl create ns bae
+kubectl run -n bae --image=bae --image-pull-policy=Never bae
+kubectl expose deployment -n bae --type=NodePort --port 80 bae
+minikube service -n bae bae
+```
